@@ -12,11 +12,17 @@ This project implements a simple ETL pipeline for Apache access logs:
 Everything runs in a single CLI command.
 
 ---
+## Required libraries:
+# This project uses only the Python standard library.
+# No external dependencies required.
+# Python 3.10+ recommended.
+
+---
 
 ## Project Structure
 
 ```text
-.
+
 ├── etl_apache.py      # CLI entrypoint – runs full ETL + summary
 ├── parser.py          # Apache combined log parser + validation + signature hash
 ├── database.py        # SQLite init + inserts + basic health checks
@@ -26,10 +32,4 @@ Everything runs in a single CLI command.
 │       └── apache_logs.txt   # Sample Apache log file (input)
 └── db/
     └── logs.db        # SQLite DB (created at runtime, ignored in git)
-```text
-
-## Required libraries:
-# This project uses only the Python standard library.
-# No external dependencies required.
-# Python 3.10+ recommended.
 
