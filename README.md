@@ -26,8 +26,10 @@ Everything runs in a single CLI command.
 │       └── apache_logs.txt   # Sample Apache log file (input)
 └── db/
     └── logs.db        # SQLite DB (created at runtime, ignored in git)
+```text
 
 ## Required libraries:
 # This project uses only the Python standard library.
 # No external dependencies required.
 # Python 3.10+ recommended.
+
